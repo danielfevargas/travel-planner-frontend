@@ -32,16 +32,17 @@ export default function ItineraryView() {
   const [feedbackStatus, setFeedbackStatus] = useState<FeedbackStatus>("idle");
 
   const submitFeedback = async (rating: "positive" | "negative") => {
-    setFeedbackRating(rating);
     setFeedbackStatus("submitting");
 
-    if (user) {
-      await supabase.from("feedback").insert({
-        user_id: user.id,
-        itinerary_destination: itinerary?.destination ?? "",
-        rating,
-        comment: feedbackComment.trim() || null,
-      });
+    const { error } = await supabase.from("feedback").insert({
+      user_id: user?.id ?? null,
+      itinerary_destination: itinerary?.destination ?? "",
+      rating,
+      comment: feedbackComment.trim() || null,
+    });
+
+    if (error) {
+      console.error("Error guardando feedback:", error);
     }
 
     setFeedbackStatus("done");
