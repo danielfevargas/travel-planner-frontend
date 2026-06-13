@@ -24,7 +24,7 @@ export default function Navbar() {
               <Plane className="w-5 h-5 text-green-950" />
             </div>
             <span className="text-white font-bold text-xl tracking-tight">
-              Travel<span className="text-green-400">Planner</span>
+              Lili<span className="text-green-400">TravelPlanner</span>
             </span>
           </Link>
 

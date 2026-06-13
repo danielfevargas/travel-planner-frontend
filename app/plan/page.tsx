@@ -4,7 +4,7 @@ import PlanForm from "@/components/PlanForm";
 import { Plane, Sparkles } from "lucide-react";
 
 export const metadata = {
-  title: "Planear viaje — Travel Planner",
+  title: "Planear viaje — LiliTravelPlanner",
   description: "Configura tu viaje ideal y genera un itinerario personalizado con IA.",
 };
 

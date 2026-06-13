@@ -10,7 +10,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Travel Planner — Itinerarios con IA",
+  title: "LiliTravelPlanner — Itinerarios con IA",
   description:
     "Planifica el viaje perfecto con inteligencia artificial. Itinerarios personalizados en segundos.",
 };

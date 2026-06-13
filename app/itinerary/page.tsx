@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import ItineraryView from "@/components/ItineraryView";
 
 export const metadata = {
-  title: "Tu itinerario — Travel Planner",
+  title: "Tu itinerario — LiliTravelPlanner",
   description: "Tu itinerario de viaje personalizado generado por IA.",
 };
 
